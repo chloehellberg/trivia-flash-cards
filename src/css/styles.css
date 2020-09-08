@@ -1,3 +1,7 @@
 header, footer {
   height: 50px;
 }
+
+#form {
+  display: none;
+}

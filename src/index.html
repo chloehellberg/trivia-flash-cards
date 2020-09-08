@@ -1,13 +1,53 @@
 <html lang="en-US">
 <head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
   <title>Weather</title>
 </head>
 <body>
   <div class="container">
-    <h1>Get Weather Conditions From Anywhere!</h1>
-    <label for="location">Enter a location:</label>
-    <input id="location" type="text">
-    <button class="btn btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
+    <h1>Would you like to play some movie trivia?</h1>
+    <button class="btn btn-primary" id="startGame">Start Trivia</button>
+    <form id="form">
+      <div class = "card" id = "card1">
+        <div class = "card-body">
+          <div class="form-group1" id="question">
+            <h4 class = "card-title">Question 1: <span id="question1"></span></h4> 
+            <div class = "card-text"> 
+              <div class="radio">
+                  <label>
+                    <input type="radio" name="q1" value="1">
+                      <span id="outputAnswer1"></span>
+                  </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q1" value="2">
+                    <span id="outputAnswer2"></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q1" value="3">
+                    <span id="outputAnswer3"></span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="q1" value="4">
+                    <span id="outputAnswer4"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
+    </form>
+    
+    
     <div class="showErrors"></div>
     <div class="showHumidity"></div>
     <div class="showTemp"></div>
@@ -17,6 +57,6 @@
     <div class="showVisibility"></div>
     <div class="showClouds"></div>
     <div id="displayNumber"></div>
-  </div>
 </body>
 </html>
+
